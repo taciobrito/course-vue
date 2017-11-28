@@ -33,6 +33,21 @@
 				</li>
 			</ul>
 		</div>
+
+		<div class="row">
+			<h1>v-on</h1>
+			<!-- <button v-on:click="myClick">Click</button> -->
+			<button @click="myClick">Click</button>
+			<input type="text" class="form-control" @keyup.enter="myKeyup" placeholder="myKeyUp" />
+		</div>
+
+		<div class="row">
+			<h1>v-bind</h1>
+			<p :class="{ 'text-danger': 1 == 1 }">text</p>
+			<p :style="{ fontSize:30 + 'px' }">style</p>
+			<p :style="[objectA, objectB]">A e B aqui</p>
+		</div>
+
 	</div>
 
 

@@ -11,6 +11,12 @@ var hello = new Vue({
 		],
 		newElement: '',
 		elements: [],
+		objectA:{
+			'font-size':'30px',
+		},
+		objectB:{
+			'color':'red',
+		},
 	},
 	methods:{
 		addElement: function(){
@@ -23,6 +29,12 @@ var hello = new Vue({
 		removeElement: function(e, index){
 			e.preventDefault();
 			this.elements.splice(index, 1);
-		}
+		},
+		myClick: function(){
+			alert('clicado');
+		},
+		myKeyup: function(){
+			alert('keypzado');
+		},
 	}
 });
