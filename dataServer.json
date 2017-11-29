@@ -1,0 +1,38 @@
+[
+	{
+		"id":1,
+		"title":"Designe Patterns",
+		"value": 37.88,
+		"description":"Elements of Reusable Objected Software",
+	},
+	{
+		"id":2,
+		"title":"A menina que Roubava Livros",
+		"value": 27.90,
+		"description":"Inocência só de rosto mesmo",
+	},
+	{
+		"id":3,
+		"title":"A Riqueza das Nações",
+		"value": 28.30,
+		"description":"Nações essas que são tantas no mundo",
+	},
+	{
+		"id":4,
+		"title":"Joyland",
+		"value": 17.80,
+		"description":"Uma ilha de arrepiar a epiderme",
+	},
+	{
+		"id":5,
+		"title":"Ele que o Abismo Viu. Epopeia de Gilgámesh",
+		"value": 37.88,
+		"description":"Estava tão escuro que meu olhos não valiam nada",
+	},
+	{
+		"id":6,
+		"title":"1: Black Science Premiere Hardcover",
+		"value": 124.50,
+		"description":"Tudo pela ciência vale fazer",
+	},
+]

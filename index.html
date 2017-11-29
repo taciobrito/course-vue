@@ -8,57 +8,32 @@
 </head>
 <body>
 
-	<div class="container" id="hello">
-		<div class="row">
-			<h1>{{ msg }}</h1>
-			<input type="text" class="form-control" v-model="msg" />
-		</div>
-
-		<div class="row">
-			<h1>My List</h1>
-			<ul>
-				<li v-for="person in people">
-					{{ person.name }}
-				</li>
-			</ul>
-		</div>
+	<div class="container" id="app">
 		
 		<div class="row">
-			<h1>My List Elements</h1>
-			<input type="text" class="form-control" v-model="newElement" v-on:keyup.enter="addElement" />
-			<ul>
-				<li v-for="element in elements">
-					{{ element.title }}
-					<a href="#" v-on:click="removeElement($event, $index)">X</a>
-				</li>
-			</ul>
+			<h1>Books</h1>
 		</div>
 
 		<div class="row">
-			<h1>v-on</h1>
-			<!-- <button v-on:click="myClick">Click</button> -->
-			<button @click="myClick">Click</button>
-			<input type="text" class="form-control" @keyup.enter="myKeyup" placeholder="myKeyUp" />
-		</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Title</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+				</thead>
 
-		<div class="row">
-			<h1>v-bind</h1>
-			<p :class="{ 'text-danger': 1 == 1 }">text</p>
-			<p :style="{ fontSize:30 + 'px' }">style</p>
-			<p :style="[objectA, objectB]">A e B aqui</p>
-		</div>
-
-		<div class="row">
-			<h1>v-model</h1>
-			<ul>
-				<li v-for="myList in myListForm">
-					{{ myList.name }} - {{ myList.email }}
-				</li>
-			</ul>
-
-			<input type="text" v-model="myForm.name" placeholder="Nome" />
-			<input type="text" v-model="myForm.email" placeholder="E-mail" />
-			<button @click="addForm">Add</button>
+				<tbody>
+					<tr v-for="book in books">
+						<td>{{ book.id }}</td>
+						<td>{{ book.title }}</td>
+						<td>{{ book.value }}</td>
+						<td>{{ book.description }}</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
 	</div>
