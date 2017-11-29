@@ -48,6 +48,19 @@
 			<p :style="[objectA, objectB]">A e B aqui</p>
 		</div>
 
+		<div class="row">
+			<h1>v-model</h1>
+			<ul>
+				<li v-for="myList in myListForm">
+					{{ myList.name }} - {{ myList.email }}
+				</li>
+			</ul>
+
+			<input type="text" v-model="myForm.name" placeholder="Nome" />
+			<input type="text" v-model="myForm.email" placeholder="E-mail" />
+			<button @click="addForm">Add</button>
+		</div>
+
 	</div>
 
 

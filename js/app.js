@@ -17,6 +17,11 @@ var hello = new Vue({
 		objectB:{
 			'color':'red',
 		},
+		myListForm: [],
+		myForm: {
+			name: '',
+			email: '',
+		},
 	},
 	methods:{
 		addElement: function(){
@@ -35,6 +40,11 @@ var hello = new Vue({
 		},
 		myKeyup: function(){
 			alert('keypzado');
+		},
+		addForm: function(){
+			this.myListForm.push({name: this.myForm.name , email: this.myForm.email });
+			this.myForm.name = '';
+			this.myForm.email = '';
 		},
 	}
 });
